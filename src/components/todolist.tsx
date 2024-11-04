@@ -1,27 +1,3 @@
-// import React from "react";
-// import { useState } from "react";
-
-// import "./todolist.css";
-
-// const ToDoList: React.FC = () => {
-//   const addItem = () => {
-//     // code will be here...
-//   };
-
-//   const deleteItem = () => {
-//     // code will be here as well...
-//   };
-
-//   return (
-//     <>
-//       <input type="text" placeholder="Enter your value here..." />
-//       <button onClick={addItem}>Add</button>
-//     </>
-//   );
-// };
-
-// export default ToDoList;
-
 import React, { useState } from "react";
 import "./todolist.css";
 import Button from "./button/button";
@@ -47,11 +23,7 @@ const ToDoList: React.FC = () => {
   };
 
   // const toggleComplete = (id: number) => {
-  //   setTodos(
-  //     todos.map((todo) =>
-  //       todo.id === id ? { ...todo, completed: !todo.completed } : todo
-  //     )
-  //   );
+  //
   // };
 
   return (
