@@ -10,7 +10,7 @@
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/eliks-ind/todolist.git
-    cd encrypt_it
+    cd todolist
     ```
 2.  **Install dependencies:**
 
