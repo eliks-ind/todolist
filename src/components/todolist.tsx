@@ -5,7 +5,6 @@ import Button from "./button/button";
 interface Todo {
   id: number;
   text: string;
-  completed: boolean;
 }
 
 const ToDoList: React.FC = () => {
@@ -14,17 +13,13 @@ const ToDoList: React.FC = () => {
 
   const addTodo = () => {
     if (newTodo.trim() === "") return;
-    setTodos([...todos, { id: Date.now(), text: newTodo, completed: false }]);
+    setTodos([...todos, { id: Date.now(), text: newTodo }]);
     setNewTodo("");
   };
 
   const deleteTodo = (id: number) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
-
-  // const toggleComplete = (id: number) => {
-  //
-  // };
 
   return (
     <div>
